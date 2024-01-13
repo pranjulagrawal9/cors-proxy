@@ -2,8 +2,7 @@
 var host = process.env.HOST || "0.0.0.0";
 // Listen on a specific port via the PORT environment variable
 var port = process.env.PORT || 8080;
-let allowedOrigin = process.env.allowedOrigin || "http://localhost:1234";
-
+let allowedOrigin = process.env.ALLOWED_ORIGIN || "http://localhost:1234";
 import { createServer } from "cors-anywhere";
 
 createServer({
